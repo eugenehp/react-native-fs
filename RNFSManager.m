@@ -277,6 +277,7 @@ RCT_EXPORT_METHOD(pathForBundle:(NSString *)bundleNamed
 {
   return @{
     @"MainBundlePath": [[NSBundle mainBundle] bundlePath],
+    @"applicationSupportDirectory": [NSSearchPathForDirectoriesInDomains(NSApplicationSupportDirectory, NSUserDomainMask, YES) objectAtIndex:0],
     @"NSCachesDirectoryPath": [self getPathForDirectory:NSCachesDirectory],
     @"NSDocumentDirectoryPath": [self getPathForDirectory:NSDocumentDirectory],
     @"NSExternalDirectoryPath": [NSNull null],
