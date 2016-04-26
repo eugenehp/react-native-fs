@@ -187,6 +187,7 @@ var RNFS = {
   },
 
   MainBundlePath: RNFSManager.MainBundlePath,
+  ApplicationSupportDirectory: RNFSManager.applicationSupportDirectory,
   CachesDirectoryPath: RNFSManager.NSCachesDirectoryPath,
   DocumentDirectoryPath: RNFSManager.NSDocumentDirectoryPath,
   ExternalDirectoryPath: RNFSManager.NSExternalDirectoryPath,
